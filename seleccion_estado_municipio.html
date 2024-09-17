@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Ferreteria</title>
+<body  background="seleccion_estado_municipio.jpg" style="background-size: cover;">
+	<div class="container" align="center">
+        <div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+            <h1>Selecciona Estado y Municipio</h1>
+			<form name="f1">
+				<select name="pais" onchange="cambia_provincia()">
+					<option value="0" selected>Seleccione...</option>
+					<option value="1">Baja California</option>
+                    <option value="2">Baja California Sur</option>
+                    <option value="3">Campeche</option>
+                    <option value="4">Chiapas</option>
+                    <option value="5">Chihuahua</option>
+                    <option value="6">Ciudad de México </option>
+                    <option value="7">Coahuila</option>
+                    <option value="8">Colima</option>
+                    <option value="9">Durango</option>
+                    <option value="10">Estado de México</option>
+                    <option value="11">Guanajuato</option>
+                    <option value="12">Guerrero</option>
+                    <option value="13">Hidalgo</option>
+                    <option value="14">Jalisco</option>
+                    <option value="15">Michoacán</option>
+                    <option value="16">Morelos</option>
+                    <option value="17">Nayarit</option>
+                    <option value="18">Nuevo León</option>
+                    <option value="19">Oaxaca</option>
+                    <option value="20">Puebla</option>
+                    <option value="21">Querétaro</option>
+                    <option value="22">Quintana Roo</option>
+                    <option value="23">San Luis Potosí</option>
+                    <option value="24">Sinaloa</option>
+                    <option value="25">Sonora</option>
+                    <option value="26">Tabasco</option>
+                    <option value="27">Tamaulipas</option>
+                    <option value="28">Tlaxcala</option>
+                    <option value="29">Veracruz</option>
+                    <option value="30">Yucatán</option>
+                    <option value="31">Zacatecas</option>
+
+				</select>
+				<select name="provincia">
+					<option value="-">-</option>
+				</select>
+			</form>
+        </div>
+        <script>
+            var provincias_1=new Array("Selecciona Múnicipio","Ensenada", "Mexicali", "Playas de Rosarito", "Tecate")
+            var provincias_2=new Array("Selecciona Múnicipio","Comondú", "La Paz", "Loreto", "Los Cabos", "Mulegé") 
+            var provincias_3=new Array("Selecciona Múnicipio","Calakmul","Calkiní","Campeche","Carmen", "Champotón", "Hecelchakán", "Hopelchén", "Palizada", "Tenabo", "Escárcega")
+            var provincias_4=new Array("Selecciona Múnicipio","Acacoyagua","Acala","Acatenango del Río","Acapetahua", "Altamirano", "Amatán", "Bejucal de Ocampo", "Bella Vista", "Catazajá", "La Grandeza", "Pantepec", "Tonalá")
+            var provincias_5=new Array("Selecciona Múnicipio","Ahumada", "Aldama", "Balleza", "Camargo", "Delicias", "Guazapares", "La Cruz", "Rosario")
+            var provincias_6=new Array("Selecciona Múnicipio","Álvaro Obregón","Azcapotzalco","Benito Juárez","Coyoacán","Cuajimalpa de Morelos","Cuauhtémoc","Gustavo A. Madero", "Iztacalco", "Iztapalapa")
+            var provincias_7=new Array("Selecciona Múnicipio","Abasolo","Allende","Cuatro Ciénegas","Lamadrid","Parras","Sierra Mojada")
+            var provincias_8=new Array("Selecciona Múnicipio","Armería","Colima","Manzanillo")
+            var provincias_9=new Array("Selecciona Múnicipio","Canatlán","Canelas","Guanaceví","Tamazula")
+            var provincias_10=new Array("Selecciona Múnicipio","Atlacomulco","Ecatepec de Morelos","Toluca","Tlalnepantla de Baz","Naucalpan de Juárez","Valle de Bravo","Chalco","Texcoco","Zinacantepec","Tenancingo")
+            var provincias_11=new Array("Selecciona Múnicipio","Acámbaro","Apaseo el Alto","Atarjea","Celaya","Comonfort","Cortazar")
+            var provincias_12=new Array("Selecciona Múnicipio","Acatepec","Azoyú","Iguala de la Independencia","Ometepec","Tlapa de Comonfort")
+            var provincias_13=new Array("Selecciona Múnicipio","Acatlán","Acaxochitlán","Actopan","Agua Blanca de Iturbide","Ajacuba","Almoloya","Almoloya")
+            var provincias_14=new Array("Selecciona Múnicipio","Acatic","Ahualulco de Mercado","Amatitán","San Juanito de Escobedo","Arandas","Atemajac de Brizuela")
+            var provincias_15=new Array("Selecciona Múnicipio","Angamacutiro","Apatzingán","Aporo","Ario")
+            var provincias_16=new Array("Selecciona Múnicipio","Amacuzac","Atlatlahucan","Ayala","Coatlán del Río","Cuernavaca")
+            var provincias_17=new Array("Selecciona Múnicipio","Acaponeta","Compostela","Ixtlán del Río","Jala","Del Nayar")
+            var provincias_18=new Array("Selecciona Múnicipio","Agualeguas","Los Aldamas","Bustamante","Carmén")
+            var provincias_19=new Array("Selecciona Múnicipio","Asunción Cacalotepec","Asunción Cuyotepeji","Asunción Ixtaltepec","Asunción Nochixtlán","Asunción Ocotlán","Asunción Tlacolulita","Ayotzintepec")
+            var provincias_20=new Array("Selecciona Múnicipio","Acateno","Acatzingo","Acteopan")
+            var provincias_21=new Array("Selecciona Múnicipio","Amealco de Bonfil","Arroyo Seco","Cadereyta de Montes","Colón","Ezequiel Montes","Huimilpan","Landa de Matamoros")
+            var provincias_22=new Array("Selecciona Múnicipio","José María Morelos","Lázaro Cárdenas","Felipe Carrillo Puerto","Cozumel","Isla Mujeres","Tulum")
+            var provincias_23=new Array("Selecciona Múnicipio","Aquismón","Armadillo de los Infante","Catorce","Cedral")
+            var provincias_24=new Array("Selecciona Múnicipio","Angostura","Badiraguato","Cosalá","Choix","Guasave")
+            var provincias_25=new Array("Selecciona Múnicipio","Agua Prieta","Altar","Arizpe","Bacadehuachi")
+            var provincias_26=new Array("Selecciona Múnicipio","Balancán","Centla","Cunduacán","Emiliano Zapata","Jalapa")
+            var provincias_27=new Array("Selecciona Múnicipio","Abasolo","Altamira","Bustamante","Camargo","Ciudad Madero")
+            var provincias_28=new Array("Selecciona Múnicipio","Amaxac de Guerrero","Atlangatepec","Calpulalpan","Muñoz de Domingo Arenas","Huamantla","Ixtacuixtla de Mariano Matamoros")
+            var provincias_29=new Array("Selecciona Múnicipio","Acayucan","Actopan","Agua Dulce","Alpatláhuac","Altotonga","Alto Lucero de Gutiérrez Barrios")
+            var provincias_30=new Array("Selecciona Múnicipio","Abalá","Acanceh","Baca","Calotmul","Cansahcab","Cantamayec")
+            var provincias_31=new Array("Selecciona Múnicipio","Apozol","Apulco","Calera","Cañitas de Felipe Pescador","Concepción del Oro","Chalchihuites","Fresnillo")
+ 
+            function cambia_provincia(){
+                var pais
+                pais = document.f1.pais[document.f1.pais.selectedIndex].value
+                if (pais != 0) {
+                    mis_provincias=eval("provincias_" + pais)
+                    num_provincias = mis_provincias.length
+                    document.f1.provincia.length = num_provincias
+                    for(i=0;i<num_provincias;i++){
+                       document.f1.provincia.options[i].value=mis_provincias[i]
+                       document.f1.provincia.options[i].text=mis_provincias[i]
+                    }
+                }else{
+                    document.f1.provincia.length = 1
+                    document.f1.provincia.options[0].value = "-"
+                    document.f1.provincia.options[0].text = "-"
+                }
+                document.f1.provincia.options[0].selected = true
+            }   
+        </script>
+		<br>			  
+			 <input type="button" value="Continuar" onclick="window.location.href='Principal.html'">
+			  <br>
+				</form>
+</body>
+</html>

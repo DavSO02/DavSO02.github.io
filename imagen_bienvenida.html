@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Temporizar Imagen en HTML</title>
+	</head>
+	<h1 align= "center">¡Bienvenidos !
+    <title>Temporizar Imagen en HTML</title>
+    </head>
+    <body background="imagen_bienvenida.jpg" style="background-size: cover;">
+    <div id="imagen-container" align="center">
+        <img id="imagen" src="portada.jpg" alt="Imagen 1" width="400" height="400">
+    </div>
+    <script>
+        var imagenes = ["mtb.jpg", "mtb2.jpg", "montaña.jpg"];
+        var indice = 0;
+        var intervaloTiempo = 3000;
+
+        function cambiarImagen() {
+        document.getElementById("imagen").src = imagenes[indice];
+        indice = (indice + 1) % imagenes.length;
+        if (indice === 0) {
+                setTimeout(function() {
+                    window.location.href = "seleccion_estado_municipio.html"; 
+                }, intervaloTiempo);
+            }
+        }
+
+        setInterval(cambiarImagen, intervaloTiempo);
+        </script>
+				
+    </body>
+</html>
+
+
+
+
